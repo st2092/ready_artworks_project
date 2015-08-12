@@ -1,0 +1,125 @@
+h1 {
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h2 {
+  color: #339999;
+  font-family:sans-serif;
+  font-size:28px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h3 {
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h4{
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h5 {
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+h6 {
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+body {
+  color: #666666;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 400i;
+  line-height: 30px;
+}
+
+h1teal {
+  color: #339999;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;  
+}
+
+h1tealmobile{
+  color: #339999;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;  
+}
+
+h2grey{
+  color: #999999;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;  
+}
+
+h2mobilegrey{
+  color: #CCCCCC;
+  font-family: sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 44px;  
+}
+
+h4mobilereg{
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;  
+}
+
+h4mobilebld{
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;  
+}
+
+bodywhite{
+  color: #FFFFFF;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 400i;
+  line-height: 30px;  
+}
+
+/* Header inline and draw vertical lines */
+#header_group li {
+  display: inline-block;
+}
+
+#header_group li + li:before {
+  content: " | ";
+  padding: 0 10px;
+}
+
+.bxslider li {
+  display: inline-block;
+}
