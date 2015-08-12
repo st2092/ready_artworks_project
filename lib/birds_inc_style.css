@@ -134,7 +134,11 @@ bodywhite{
   background-color: #68AAAA;
 }
 
-/* Create thumbnails from landscape and portrait images */
+/* 
+ * Create thumbnails from landscape and portrait images.
+ * Note: this method of cropping uses CSS3 transform, so it works
+ * for all modern browsers (IE9 and above).
+ */
 .thumbnail {
   position: relative;
   width: 300px;
@@ -142,6 +146,7 @@ bodywhite{
   overflow: hidden;
 }
 
+/* portrait orientation images */
 .thumbnail img {
   position: absolute;
   left: 50%;
