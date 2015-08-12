@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- HEADER -->
   <head>
     <!-- jQuery library (served from Google) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -7,44 +8,242 @@
     <!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.min.js"></script>
     
+    <!-- colorbox JavaScript file -->
+    <script src="js/jquery.colorbox-min.js"></script>
+    
     <!-- bxSlider CSS file -->
     <link href="lib/jquery.bxslider.css" rel="stylesheet" />
     
     <!-- birds inc CSS file -->
     <link href="lib/birds_inc_style.css" rel="stylesheet" />
     
+    <!-- colorbox CSS file -->
+    <link href="lib/colorbox.css" rel="stylesheet" />
     <!-- bird inc action JavaScript file 
     <script src="js/birds_inc_actions.js"</script> -->
     
     <script type="text/javascript">
       $(document).ready(function(){
+        // initalize bxSlider
         $(".bxslider").bxSlider({
           minSlides: 1,
           maxSlides: 4,
-          slideWidth: 768,
-          slideMargin: 100,
+          slideWidth: 350,
+          slideMargin: 10,
           ticker: true,
           speed: 15000
         }); 
+        
+        //initialize Colorbox
+        $('.gallery a').colorbox({ opacity:0.5, rel:'group1'});
       });
     </script>
     
-    <h2 align="right">
-      <ul id="header_group">
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>PRODUCT</li>
-        <li>CONTACT</li>
-      </ul>
-    </h2>
+    <!-- Table with 2 columns (1 for logo, 1 for navigational items -->
+    <table style="width:50%" align="center">
+      <tr>
+        <td>
+          <!-- Logo -->
+          <img src="images/logo.png" align="center"/>
+        </td>
+        <td> 
+          <!-- Navigation items -->    
+          
+          <nav align="center">
+            <h2>
+              <a href="#">HOME</a> |
+              <a href="#"> ABOUT</a> |
+              <a href="#"> PRODUCT</a> |
+              <a href="#"> CONTACT</a>
+            </h2>
+          </nav> 
+          <!--
+          <ul class="nav">
+            <li class="active"><a herf="#">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCT
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">bird feeders & houses</a></li>
+                <li><a href="#">bird watching equipment</a></li>
+                <li><a href="#">books</a></li>
+                <li><a href="#">cleaning tools</a></li>
+                <li><a href="#">bird cages</a></li>
+                <li><a href="#">bird toys</a></li>
+                <li><a href="#">training materials</a></li>
+                <li><a href="#">bird costumes</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </td>
+      </tr>
+    </table>
+    
     <!-- news ticker -->
-    <ul class="bxslider">
-      <li><h4>NATIONAL BIRD DAY 1/05/16</h4></li>
-      <li><h4>CANDADIAN GEESE MIGRATION 9/15/15</h4></li>
-      <li><h4>NATIONAL BIRD DAY 1/05/16</h4></li>
-      <li><h4>GOOD BIRD WORKSHOP 6/14/16 </h4></li>
-    </ul>
+    <div id="news_ticker">
+      <ul class="bxslider">
+        <li>
+          <h4>     NATIONAL BIRD DAY
+            <div style="float:right;"><h5>1/05/16</h5></div>
+          </h4>
+        </li>
+        <li>
+          <h4>     CANADIAN GEESE MIGRATION
+            <div style="float:right;"><h5>9/15/15</h5></div>
+          </h4>
+        </li>
+        <li>
+          <h4>     Hitchcock's "The Birds"
+            <div style="float:right;"><h5>3/29/1963</h5></div>
+          </h4>
+        </li>
+        <li>
+          <h4>     GOOD BIRD WORKSHOP
+            <div style="float:right;"><h5>6/14/16</h5></div>
+          </h4>
+        </li>
+      </ul>
+    </div>
   </head>
   
+  <!-- BODY -->
+  <body>
+    <table style="width:80%" align="center" bgcolor="#CCCCCC">
+      <tr>
+        <td>
+          <!-- Embedded YouTube Video -->
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/SyO3YwrsJPg" frameborder="0" allowfullscreen>
+          </iframe>
+        </td>
+        <td>
+          <h1>Watch a chicken hatch</h1>
+          <body>
+            Watch a baby chicken hatch from its egg. The video is about 4 minutes long and worth the viewing. Nature at its best.
+          </body>
+        </td>
+      </tr>
+    </table>
+    <!-- 2 main sections (image followed by title and description -->
+    <table style="width:80%" align="center" cellpadding="10" cellspacing="35">
+      <tr>
+        <td>
+          <img src="images/bird_watching.png"/>
+          <h1>Bird Watching Tips</h1>
+          <body>After viewing the bird, jot down your observations for later reference. From markings to behavior, write down anything you noticed, it can all help when you later sit down with a field guide to confirm the bird's species. Also, note the location, date, time of day of the siting.</body>
+        </td>
+        <td>
+          <img src="images/fascinating_fact.png"/>
+          <h1>Fascinating Facts</h1>
+          <body>The smallest bird egg belongs to the hummingbird and is the size of a pea.  The largest bird egg, from which the ostrich hatches, is the size of a cantaloupe.</body>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Gallery (3x4 size)-->
+    <h1teal align="center">BIRDS OF THE MONTH</h1teal>
+    <div class='gallery'>
+      <table style="width 100%" align="center" cellpadding="26">
+        <!--
+        <a href='images/image1.jpg'>
+          <img src="images/image1.jpg" />
+        </a>
+        <a href='images/image2.jpg'>Photo_2</a>
+        <a href='images/bird_watching.png'>Photo_3</a> -->
+        <tr>
+          <td>
+            <a href='images/bird1.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird1.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird2.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird2.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird3.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird3.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird4.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird4.jpg" />
+              </div>
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <a href='images/bird5.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird5.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird6.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird6.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird7.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird7.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird8.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird8.jpg" />
+              </div>
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <a href='images/bird9.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird9.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird10.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird10.jpg" class="portrait" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird11.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird11.jpg" />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href='images/bird12.jpg'>
+              <div class="thumbnail">
+                <img src="images/bird12.jpg" class="portrait" />
+              </div>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
   
 </html>

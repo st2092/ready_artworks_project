@@ -60,6 +60,7 @@ h1teal {
   font-size: 32px;
   font-weight: 700;
   line-height: 30px;  
+  margin-left: 12%;
 }
 
 h1tealmobile{
@@ -120,6 +121,39 @@ bodywhite{
   padding: 0 10px;
 }
 
+#news_ticker {
+  color: #999999;
+  background-color: #68AAAA;
+}
+
 .bxslider li {
   display: inline-block;
+  border-left: solid;
+  border-color: #999999
+  color: #000;
+  background-color: #68AAAA;
+}
+
+/* Create thumbnails from landscape and portrait images */
+.thumbnail {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
 }
