@@ -157,12 +157,14 @@ bodywhite{
   background: #339999;
 }
 
+.footer_link {
+  color: #666666;
+  text-decoration: none;
+}
+
 /* News ticker color configuration */
 .bxslider li {
   display: inline-block;
-  border-left: solid;
-  border-color: #999999
-  color: #000;
   background-color: #99CCCC;
 }
 
@@ -209,11 +211,12 @@ bodywhite{
 
 #menu li {
   display:inline-block;
+  /*border-right: 1px solid #339999;*/
 }
 
 /* add space between each list item if it is not the last one */
 #menu li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 /* do not display sub-menu by default */
@@ -227,10 +230,10 @@ bodywhite{
   display:block;
   background: white;
   height: auto;
-  width: 220px;
+  width: 190px;
   border: 1px solid #ADADAD;
   text-align:absolute;
-  margin-left: -50px;
+  margin-left: -40px;
 }
 
 /* 
@@ -244,10 +247,75 @@ bodywhite{
 
 #menu li ul li {
   clear:both;
-  border-bottom: 1px solid #ADADAD;
-  border-bottom-width: 100%;
+  border-left: 0px solid #FFFFFF;
+}
+
+#menu li ul li+li {
+  /*border-top: 1px solid #ADADAD;*/
 }
 
 #h1teal_gallery_title {
   text-align: left;
+  margin-left: 14%;
+}
+
+/* Footer menu customizations */
+#menu_footer ul {
+  padding: 1;
+  margin: 1;
+  list-style:none;
+}
+
+#menu_footer li {
+  display:inline-block;
+}
+
+#menu_footer li:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Customizations for vertical lines */
+div.vertical_line {
+  width: 1px;
+  background-color: #339999;
+  height: 30px;
+  display: inline-block;
+}
+
+div.vertical_line_grey {
+  width: 1px;
+  background-color: #666666;
+  height: 30px;
+  display: inline-block;
+}
+
+div.vertical_line_news_ticker {
+  width: 1px;
+  background-color: #999999;
+  height: 90px;
+  display: inline-block;
+}
+
+#submenu li {
+  margin-left: -20px;
+  background-color: #FFFFFF;
+}
+#submenu hr {
+  margin-left: -40px;
+  color: #ADADAD;
+}
+
+/* Configure bxSlider wrapper */
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #999999;
+  left: 0px;
+  top: 0px;
+  background: #99CCCC;
+}
+
+.bx-wrapper ul li {
+  height: 120px;
 }

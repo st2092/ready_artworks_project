@@ -23,6 +23,7 @@
     
     <!-- colorbox CSS file -->
     <link href="lib/colorbox.css" rel="stylesheet" />
+    
     <!-- bird inc action JavaScript file 
     <script src="js/birds_inc_actions.js"</script> -->
     
@@ -39,12 +40,12 @@
       }
       
       $(document).ready(function(){
-        // initalize bxSlider
+        // initialize bxSlider
         $(".bxslider").bxSlider({
           minSlides: 1,
-          maxSlides: 4,
-          slideWidth: 350,
-          slideMargin: 10,
+          maxSlides: 10,
+          slideWidth: 380,
+          slideMargin: 0,
           ticker: true,
           speed: 15000
         }); 
@@ -59,8 +60,8 @@
     
     <!-- Table with 2 columns (1 for logo, 1 for navigational items -->
     <table style="width:100%" align="center">
-      <col width="50%">
-      <col width="50%">
+      <col width="40%">
+      <col width="60%">
       <tr>
         <td align="center">
           <!-- Logo -->
@@ -70,94 +71,123 @@
           <!-- Navigation items -->    
           <div id="menu">
             <ul>
-              <li><h2><a class="h2_link" href="#">HOME</a></h2></li>
-              <li><h2><a class="h2_link" href="#">ABOUT</a></h2></li>
-              <li><h2grey><a class="h2grey_link" href="#">PRODUCT</a></h2grey>
+              <li><a class="h2_link" href="#"><pre><h2>HOME  </h2></pre></a></li>
+              <li><div class="vertical_line"/></li>
+              <li><a class="h2_link" href="#"><pre><h2>ABOUT  </h2></pre></a></li>
+              <li><div class="vertical_line"/></li>
+              <li><a class="h2grey_link" href="#"><pre><h2grey>PRODUCT  </h2grey></pre></a>
                 <!-- submenu -->
-                <ul>
-                <body>
-                  <li><a class="body_link" href="#">bird feeders & houses</a></li>
-                  <li><a class="body_link" href="#">bird watching equipment</a></li>
-                  <li><a class="body_link" href="#">books</a></li>
-                </body>
-                  <li><bodywhite><a class="bodywhite_link" href="#">cleaning tools</a><bodywhite></li>
-                <body>
-                  <li><a class="body_link" href="#">bird cages</a></li>
-                  <li><a class="body_link" href="#">bird toys</a></li>
-                  <li><a class="body_link" href="#">training materials</a></li>
-                  <li><a class="body_link" href="#">bird costumes</a></li>
-                </body>
+                <ul id="submenu">
+   
+                  <li><a class="body_link" href="#"><body>bird feeders & houses</body></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>bird watching equipment</body></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>books</body></a></li>
+                  <hr>
+                  <li><a class="bodywhite_link" href="#"><bodywhite>cleaning tools</bodywhite></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>bird cages</body></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>bird toys</body></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>training materials</body></a></li>
+                  <hr>
+                  <li><a class="body_link" href="#"><body>bird costumes</body></a></li>
+                
                 </ul>
               </li>
+              <li><div class="vertical_line" /></li>
               <li><h2><a class="h2_link" href="#">CONTACT</a></h2></li>
             </ul>
           </div>
-          
-          <!--
-          <nav align="center">
-            <h2>
-              <a href="#">HOME</a> |
-              <a href="#"> ABOUT</a> |
-              <a href="#"> PRODUCT</a> |
-              <a href="#"> CONTACT</a>
-            </h2>
-          </nav>
-          -->
-          <!--
-          <ul class="nav">
-            <li class="active"><a herf="#">HOME</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCT
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">bird feeders & houses</a></li>
-                <li><a href="#">bird watching equipment</a></li>
-                <li><a href="#">books</a></li>
-                <li><a href="#">cleaning tools</a></li>
-                <li><a href="#">bird cages</a></li>
-                <li><a href="#">bird toys</a></li>
-                <li><a href="#">training materials</a></li>
-                <li><a href="#">bird costumes</a></li>
-              </ul>
-            </li>
-          </ul> -->
         </td>
       </tr>
     </table>
     
     <!-- news ticker -->
-    <!--
     <div id="news_ticker">
       <ul class="bxslider">
         <li>
-          <h4>     NATIONAL BIRD DAY
-            <div style="float:right;"><h5>1/05/16</h5></div>
-          </h4>
+          <table style="width: 100%" align="center">
+            <col width="65%">
+            <col width="30%">
+            <col width="5%">
+            <tr>
+              <td>
+                <h4>NATIONAL BIRD DAY</h4>
+              </td>
+              <td>
+                <h5>1/05/16</h5>
+              </td>
+              <td>
+                <div class="vertical_line_news_ticker"/>
+              </td>
+            <tr>
+          </table>
         </li>
         <li>
-          <h4>     CANADIAN GEESE MIGRATION
-            <div style="float:right;"><h5>9/15/15</h5></div>
-          </h4>
+          <table style="width: 100%" align="center">
+            <col width="65%">
+            <col width="30%">
+            <col width="5%">
+            <tr>
+              <td>
+                <h4>CANADIAN GEESE MIGRATION</h4>
+              </td>
+              <td>
+                <h5>9/15/15</h5>
+              </td>
+              <td>
+                <div class="vertical_line_news_ticker"/>
+              </td>
+            <tr>
+          </table>
         </li>
         <li>
-          <h4>     Hitchcock's "The Birds"
-            <div style="float:right;"><h5>3/29/1963</h5></div>
-          </h4>
+          <table style="width: 100%" align="center">
+            <col width="65%">
+            <col width="30%">
+            <col width="5%">
+            <tr>
+              <td>
+                <h4>Hitchcock's "The Birds" Screening</h4>
+              </td>
+              <td>
+                <h5>3/29/16</h5>
+              </td>
+              <td>
+                <div class="vertical_line_news_ticker"/>
+              </td>
+            <tr>
+          </table>
         </li>
         <li>
-          <h4>     GOOD BIRD WORKSHOP
-            <div style="float:right;"><h5>6/14/16</h5></div>
-          </h4>
+          <table style="width: 100%" align="center">
+            <col width="65%">
+            <col width="30%">
+            <col width="5%">
+            <tr>
+              <td>
+                <h4>BIRD WATCHING WORKSHOP</h4>
+              </td>
+              <td>
+                <h5>6/14/16</h5>
+              </td>
+              <td>
+                <div class="vertical_line_news_ticker"/>
+              </td>
+            <tr>
+          </table>
         </li>
       </ul>
     </div>
-    -->
   </div>
   </head>
 
   <!-- BODY -->
   <body>
-  <div id="wrapper" align="center">
+  <div id="wrapper" align="center" style="margin-top: -45px;">
     <table style="width:100%" align="center" bgcolor="#CCCCCC" cellpadding="10" cellspacing="20">
       <col width="50%">
       <col width="50%">
@@ -199,7 +229,11 @@
         </td>
       </tr>
     </table>
+    </div>
     
+    <hr>
+    
+    <div class=wrapper" align="center">
     <!-- Gallery (3x4 size)-->
     <div id="h1teal_gallery_title">
       <h1teal>BIRDS OF THE MONTH</h1teal>
@@ -309,18 +343,21 @@
     <table style="width: 100%;" align="center" >
       <tr>
         <td>
-          <nav align="center">
-            <h3>
-              <a href="#">HOME</a> |
-              <a href="#"> ABOUT</a> |
-              <a href="#"> PRODUCT</a> |
-              <a href="#"> CONTACT</a>
-            </h3>
+          <div id="menu_footer">
+            <ul>
+              <li><a class="footer_link" href="#"><pre><h3>HOME</h3></pre></a><li>
+              <li><div class="vertical_line_grey" /></li>
+              <li><a class="footer_link" href="#"><pre><h3>ABOUT </h3></pre></a></li>
+              <li><div class="vertical_line_grey" /></li>
+              <li><a class="footer_link" href="#"><pre><h3>PRODUCT </h3></pre></a></li>
+              <li><div class="vertical_line_grey" /></li>
+              <li><a class="footer_link" href="#"><pre><h3>CONTACT </h3></pre></a></li>
+            </ul>
             <img src="images/logo_grey.png">
             <h6>
-              Copyright &#169; 2015 Birds Inc. All Rights Reserved. Website by
+              Copyright &#169; 2015 Birds Inc. All Rights Reserved. Website by Steven To
             </h6>
-          </nav>
+          </div>
         </td>
         
         <td align="right">
