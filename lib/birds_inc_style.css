@@ -1,4 +1,10 @@
 /* Text Styles as provided */
+#wrapper {
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   color: #666666;
   font-family: sans-serif;
@@ -61,7 +67,7 @@ h1teal {
   font-size: 32px;
   font-weight: 700;
   line-height: 30px;  
-  margin-left: 12%;
+  margin-left: 2%;
 }
 
 h1tealmobile{
@@ -72,7 +78,7 @@ h1tealmobile{
   line-height: 30px;  
 }
 
-h2grey{
+h2grey {
   color: #999999;
   font-family: sans-serif;
   font-size: 28px;
@@ -127,6 +133,30 @@ bodywhite{
   background-color: #99CCCC;
 }
 
+/* Keep links their original color and remove underline. */
+.h2_link {
+  color: #339999;
+  text-decoration: none;
+}
+
+.h2grey_link{
+  color: #999999;
+  text-decoration: none;
+}
+
+.body_link {
+  color: #666666;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.bodywhite_link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-style: italic;
+  background: #339999;
+}
+
 /* News ticker color configuration */
 .bxslider li {
   display: inline-block;
@@ -143,8 +173,8 @@ bodywhite{
  */
 .thumbnail {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -168,4 +198,56 @@ bodywhite{
 #map {
   width: 530px;
   height: 280px;
+}
+
+/* Header menu customizations */
+#menu ul {
+  padding: 1;
+  margin: 1;
+  list-style:none;
+}
+
+#menu li {
+  display:inline-block;
+}
+
+/* add space between each list item if it is not the last one */
+#menu li:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* do not display sub-menu by default */
+#menu li ul {
+  display:none;
+  position:absolute;
+}
+
+/* When an item gets hover over display a submenu for that hovered item. */
+#menu li:hover ul {
+  display:block;
+  background: white;
+  height: auto;
+  width: 220px;
+  border: 1px solid #ADADAD;
+  text-align:absolute;
+  margin-left: -50px;
+}
+
+/* 
+ * submenu item changes color from white to dark teal when hover over and 
+ * also set text to white
+ */
+#menu li:hover ul li:hover {
+  background: #339999;
+  color: white;
+}
+
+#menu li ul li {
+  clear:both;
+  border-bottom: 1px solid #ADADAD;
+  border-bottom-width: 100%;
+}
+
+#h1teal_gallery_title {
+  text-align: left;
 }
