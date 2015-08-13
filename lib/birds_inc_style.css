@@ -303,6 +303,7 @@ div.vertical_line_news_ticker {
   margin-left: -20px;
   background-color: #FFFFFF;
 }
+
 #submenu hr {
   margin-left: -40px;
   color: #ADADAD;
@@ -321,4 +322,30 @@ div.vertical_line_news_ticker {
 
 .bx-wrapper ul li {
   height: 120px;
+}
+
+/* 
+ * Mobile section 
+ * Styling below is specifically for mobile web page.
+ * Styles that overlaps with the desktop version will
+ * not appear in this section.
+ */
+ div.wrapper_mobile {
+  /* max-width is 320 for now to test design against given */
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+#menu_hr_line {
+  background-color: #999999;
+  height: 1px;
+  border: 0;
+}
+
+div.mobile_vertical_line_news_ticker {
+  width: 1px;
+  background-color: #999999;
+  height: 95px;
+  display: inline-block;
 }
