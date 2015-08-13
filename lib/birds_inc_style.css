@@ -1,3 +1,4 @@
+/* Text Styles as provided */
 h1 {
   color: #666666;
   font-family: sans-serif;
@@ -123,15 +124,16 @@ bodywhite{
 
 #news_ticker {
   color: #999999;
-  background-color: #68AAAA;
+  background-color: #99CCCC;
 }
 
+/* News ticker color configuration */
 .bxslider li {
   display: inline-block;
   border-left: solid;
   border-color: #999999
   color: #000;
-  background-color: #68AAAA;
+  background-color: #99CCCC;
 }
 
 /* 
@@ -161,4 +163,9 @@ bodywhite{
 .thumbnail img.portrait {
   width: 100%;
   height: auto;
+}
+
+#map {
+  width: 530px;
+  height: 280px;
 }

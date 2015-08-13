@@ -11,6 +11,9 @@
     <!-- colorbox JavaScript file -->
     <script src="js/jquery.colorbox-min.js"></script>
     
+    <!-- Google Maps JavaScript -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+      
     <!-- bxSlider CSS file -->
     <link href="lib/jquery.bxslider.css" rel="stylesheet" />
     
@@ -23,6 +26,17 @@
     <script src="js/birds_inc_actions.js"</script> -->
     
     <script type="text/javascript">
+      // initialize function for google map
+      var google_map_initialize = function(){
+        var map_canvas = document.getElementById('map');
+        var map_options = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+      }
+      
       $(document).ready(function(){
         // initalize bxSlider
         $(".bxslider").bxSlider({
@@ -36,6 +50,9 @@
         
         //initialize Colorbox
         $('.gallery a').colorbox({ opacity:0.5, rel:'group1'});
+        
+        //initialize google maps
+        google.maps.event.addDomListener(window, 'load', google_map_initialize);
       });
     </script>
     
@@ -108,18 +125,20 @@
   
   <!-- BODY -->
   <body>
-    <table style="width:80%" align="center" bgcolor="#CCCCCC">
+    <table style="width:100%" align="center" bgcolor="#CCCCCC" cellpadding="10" cellspacing="20">
       <tr>
         <td>
           <!-- Embedded YouTube Video -->
-          <iframe width="560" height="315" 
+          <iframe width="600" height="360" 
           src="https://www.youtube.com/embed/SyO3YwrsJPg" frameborder="0" allowfullscreen>
           </iframe>
         </td>
         <td>
           <h1>Watch a chicken hatch</h1>
           <body>
+            <p style="font-style:italic;">
             Watch a baby chicken hatch from its egg. The video is about 4 minutes long and worth the viewing. Nature at its best.
+            </p>
           </body>
         </td>
       </tr>
@@ -130,12 +149,16 @@
         <td>
           <img src="images/bird_watching.png"/>
           <h1>Bird Watching Tips</h1>
-          <body>After viewing the bird, jot down your observations for later reference. From markings to behavior, write down anything you noticed, it can all help when you later sit down with a field guide to confirm the bird's species. Also, note the location, date, time of day of the siting.</body>
+          <body>
+            <p style="font-style:italic;">After viewing the bird, jot down your observations for later reference. From markings to behavior, write down anything you noticed, it can all help when you later sit down with a field guide to confirm the bird's species. Also, note the location, date, time of day of the siting.</p>
+          </body>
         </td>
         <td>
           <img src="images/fascinating_fact.png"/>
           <h1>Fascinating Facts</h1>
-          <body>The smallest bird egg belongs to the hummingbird and is the size of a pea.  The largest bird egg, from which the ostrich hatches, is the size of a cantaloupe.</body>
+          <body>
+            <p style="font-style:italic;">The smallest bird egg belongs to the hummingbird and is the size of a pea.  The largest bird egg, from which the ostrich hatches, is the size of a cantaloupe.</p>
+          </body>
         </td>
       </tr>
     </table>
@@ -144,12 +167,6 @@
     <h1teal align="center">BIRDS OF THE MONTH</h1teal>
     <div class='gallery'>
       <table style="width 100%" align="center" cellpadding="26">
-        <!--
-        <a href='images/image1.jpg'>
-          <img src="images/image1.jpg" />
-        </a>
-        <a href='images/image2.jpg'>Photo_2</a>
-        <a href='images/bird_watching.png'>Photo_3</a> -->
         <tr>
           <td>
             <a href='images/bird1.jpg'>
@@ -246,4 +263,32 @@
     </div>
   </body>
   
+  <!-- FOOTER -->
+  <footer style="background-color: #DFDFDF;">
+    <table style="width: 100%;" align="center" >
+      <tr>
+        <td>
+          <nav align="center">
+            <h3>
+              <a href="#">HOME</a> |
+              <a href="#"> ABOUT</a> |
+              <a href="#"> PRODUCT</a> |
+              <a href="#"> CONTACT</a>
+            </h3>
+            <img src="images/logo_grey.png">
+            <h6>
+              Copyright &#169; 2015 Birds Inc. All Rights Reserved. Website by Steven To
+            </h6>
+          </nav>
+        </td>
+        
+        <td>
+          <!-- embed google map location -->
+          <iframe frameborder="0" scrolling="no" marginheight="0" width="530" height="280"
+            src="https://maps.google.com/maps?hl=en&q=403 S Mission Dr, San Gabriel, CA 91776&ie=UTF8&t=m&z=16&iwloc=B&output=embed">
+          </iframe>
+        </td>
+      </tr>
+    </table>
+  </footer>
 </html>
