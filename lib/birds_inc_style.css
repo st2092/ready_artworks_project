@@ -91,7 +91,7 @@ h2mobilegrey{
   font-family: sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 44px;  
+  line-height: 44px;
 }
 
 h4mobilereg{
@@ -343,6 +343,14 @@ div.vertical_line_news_ticker {
   border: 0;
 }
 
+#menu_hr_line2 {
+  background-color: #999999;
+  height: 1px;
+  border: 0;
+  min-width: 320px;
+  margin-left: -37px;
+}
+
 div.mobile_vertical_line_news_ticker {
   width: 1px;
   background-color: #999999;
@@ -403,4 +411,71 @@ div.mobile_vertical_line_news_ticker {
 
 #mobile_footer_menu ul li a {
   text-decoration: none;
+}
+
+/* Header dropdown menu configurations */
+#menu_mobile {
+  list-style: none;
+}
+
+#dropdown_menu_mobile {
+  list-style: none;
+}
+
+#product_submenu_mobile {
+  list-style: none;
+}
+
+.body_link_mobile {
+  text-decoration: none;
+  font-style: italic;
+  color: #666666;
+}
+
+.dropdown_menu_mobile_link {
+  text-decoration: none;
+}
+
+.menu_mobile_link {
+  text-decoration: none;
+}
+
+#product_submenu_mobile {
+  display: none;
+  position: relative;
+}
+
+#dropdown_menu_mobile {
+  display: none;
+  position: relative;
+}
+
+/* When hover over "menu" show the dropdown menu. */
+#menu_mobile li:hover #dropdown_menu_mobile{
+  display: block;
+  margin-left: -35px;
+}
+
+/* Show submenu when hover over dropdown menu item. */
+#dropdown_menu_mobile li:hover ul {
+  display: block;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+
+#product_submenu_mobile a:hover{
+  color: white;
+}
+
+/* Any item in dropdown menu that gets hover over change to grey with white text */
+#dropdown_menu_mobile li:hover {
+  background-color: #CCCCCC;
+}
+
+#menu_h2mobilegrey {
+  margin-top: -20px;
+}
+
+#hr_line2 {
+  margin-top: -20px;
 }
