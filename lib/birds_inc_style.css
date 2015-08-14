@@ -349,3 +349,58 @@ div.mobile_vertical_line_news_ticker {
   height: 95px;
   display: inline-block;
 }
+
+.bird_watching_resize {
+  max-width: 95%;
+  max-height: 95%;
+  margin-top: 25px;
+}
+
+.fascinating_facts_resize {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#mobile_horizontal_line {
+  background-color: #A3A3A3;
+  height: 1px;
+  border: 0;
+}
+
+/* 
+ * Create thumbnails from landscape and portrait images.
+ * Note: this method of cropping uses CSS3 transform, so it works
+ * for all modern browsers (IE9 and above).
+ */
+.thumbnail_mobile {
+  position: relative;
+  width: 140px;
+  height: 125px;
+  overflow: hidden;
+}
+
+/* portrait orientation images */
+.thumbnail_mobile img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.thumbnail_mobile img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+#mobile_footer_menu ul {
+  list-style: none;
+  margin-left: -30px;
+}
+
+#mobile_footer_menu ul li a {
+  text-decoration: none;
+}
